@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #07152d;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    opacity: 0;
+}
+
+.container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.stars {
+    background: url('stars.png');
+    z-index: -1;
+}
+
+.moon {
+    background: url('moon.png');
+    z-index: 10;
+}
+
+.hill {
+    background: url('hill2Artboard\ 1.png');
+    z-index: 100;
+}
+
+.glow {
+    background: url('glow.png');
+    z-index: -1;
+}
+
+.cloud1 {
+    background: url('cloud1.png');
+    z-index: 1;
+}
+
+.cloud2 {
+    background: url('cloud2.png');
+    z-index: 2;
+}
+
+.cloud3 {
+    background: url('cloud3.png');
+    z-index: 3;
+}
+
+h1 {
+    opacity: 0;
+    font-family: 'nunito', 'sans-serif';
+    text-align: center;
+    font-size: 7em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0em 0em 0.1em white;
+}
+
+/* #07152d */
