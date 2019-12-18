@@ -1,0 +1,266 @@
+/* NAVBAR STUFF	*/
+
+/* NAVBAR */
+.navbar-dark {
+	box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.16), 2px 2px 10px 5px rgba(0,0,0,0.12);
+	z-index: 2;
+}
+
+/* Navbar social icons */
+.icons a{
+	padding: 0;
+	margin: 5px;
+	color: rgb(218, 200, 200);
+}
+
+#darkbutton{
+	border: none;
+	color: rgb(218, 200, 200);
+	background-color: #343a40;
+}
+
+/* Navbar brand icons */
+.navbar-dark .navbar-brand{
+	color: rgb(218, 200, 200);
+}
+
+/* Mouseover for icons */
+.icons a:hover{
+	color: white;
+}
+
+/* LEFT SIDE STUFF*/
+
+/* Sidenav box styles */
+.sidenav{
+	/* Nav styles*/
+	background-color:#f1f1f1;
+	box-shadow: 0 2px 5px 0 rgba(209, 193, 193, 0.507), 0 2px 10px 0 rgba(0,0,0,0.12);	
+	/* Making it fixed and scrollable */
+	position: fixed;
+	overflow-y: scroll;
+	/* Positions */
+	top: 50px;
+ 	bottom: 0;	
+	z-index: 1;
+	left: 0px;
+}
+
+/* Links on hover */
+.sidenav a:hover{
+	background-color: rgb(211, 197, 197);
+
+}
+
+/* Text inside of sidenav*/
+.sidenav h5, a{
+color: black;
+padding-left: 15px;
+}
+
+/* "The Web" "The Internet" "HTML/CSS" blocks */
+.contentblock{
+	margin: 0 0 10% 0 ;
+}
+
+/* Sidenav headers */
+.sidenav h5{
+	font-size: 130%;
+	padding: 20px 0px 10px 15px;
+}
+/* Sidenav links */
+.nav-link{
+	padding: 0px 0px 0px 1rem ;
+}
+
+/* Sidenav links on hover */
+.sidenav a:hover{
+	color:#5c514a;
+}
+
+/* CENTER CONTENT STUFF */
+
+/* Top jumbotron */
+.centerJumbotron{
+	margin-top: 60px;
+	background: url(images/homepagejumbo2.jpg);
+	background-size: cover;
+	background-position: center;	
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);	
+	color: white;
+	text-align: center;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+	
+}
+/* Top jumbotron header */
+.centerJumbotron h1{
+	font-size: 290%;
+}
+
+/*	Main content headers */
+.centercontent h2,h3,h4{
+	margin: 10px 0px 20px 0px;
+}
+
+/* Main content hr*/
+hr{
+	width: 100%;
+	margin: 40px 0px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	float:left;
+}
+	
+/* Remove the margins from the row div block*/
+.row{
+	margin:0;
+}
+
+/* Add some spacing to block lists */
+.block ul{
+	margin: 10px;
+}
+
+/* Make the width of selected images 500px */
+.smallimg{
+	width: 500px;
+}
+/* Make the width of selected images 100px */
+.verysmallimg{
+	width: 100px;
+}
+
+/* Each block of content */
+.block{
+	float: left;
+	width:100%;
+}
+
+/* Images in the blocks of content */
+.block img{
+	margin: 0px 15px 0px 10px;
+}
+
+/* Remove padding from links */
+.block a{
+	color: rgb(218, 200, 200);
+	padding: 0;
+}
+
+/* Video in the TCP/IP block */
+#tcpvideo{
+	width: 420px;
+	height:320px;
+	margin-left: 20px;
+}
+
+.reference{
+	font-weight: 500;
+	text-decoration-line: underline;
+}
+
+.reference:hover{
+	color: #212529;
+}
+
+/* THINGS BELOW THE MAIN CONTENT */
+
+/* QUIZ */
+
+/* The quiz styles */
+.quiz{
+	box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.16), 2px 2px 10px 5px rgba(0,0,0,0.12);
+	margin-top: 20px;
+	padding: 20px 20px;
+	background-color:#343a40;
+	width: 100%;
+	color: rgb(218, 200, 200);
+}
+
+/* Hides the div with results*/
+#after_submit{
+	visibility: hidden;
+	margin: 20px 0px 0px 20px;
+}
+
+/* Add margin to radio buttons */
+.multiplequestion{
+	margin: 10px;
+}
+
+/* Add margin to quiz paragraphs */
+.quiz p{
+	margin-top: 10px;
+}
+
+/* Add margin to the submit button */
+#submit{
+	margin: 20px 0px 0px 20px;
+}
+
+/* FOOTER */
+
+/* The footer styles */
+.footer{
+	float: left;
+	width: 100%;
+	color:rgb(218, 200, 200);
+	background-color: #212529;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* Footer paragraphs */
+.foot p{
+	margin-bottom: 0px;
+	margin-right: 20px;
+}
+/* Footer links */
+.foot a{
+	color:rgb(218, 200, 200);
+	margin-right: 20px;
+	margin-left: 20px;
+}
+/* Mouse over link for the footer */
+.foot a:hover {
+	color: white;
+  }
+
+/* Image in the XHTML block */
+#xhtmlimg{
+	list-style-type: none;
+}
+
+/* DARK MODE CLASSES */
+/* dark body */
+body.dark-mode{
+	color: rgb(218, 200, 200);
+	background-color: #212529;
+}
+/* light body */
+body.light-mode{
+	color: black;
+	background-color: white;
+}
+
+/* dark table */
+table.dark-mode{
+	color: rgb(218, 200, 200);
+	background-color: #212529;
+}
+/* light table */
+table.light-mode{
+	color: black;
+	background-color: white;
+}
+
+
+/* To make IE happy */
+
+.navbar{
+	position: fixed;
+	width: 100%;
+}

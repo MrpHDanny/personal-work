@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CSS Style sheet -->
+  <link rel="stylesheet" type="text/css" href="homepage.css">
+  <!-- JS -->
+  <title>Homepage</title>
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <div class="topnav">
+  <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand " href="landingPage.html" title="Go back to the landing page"><i class="fas fa-wifi"></i> Inter.net</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" title="Homepage"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li><button type="button" id="darkbutton" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><i class="far fa-moon"></i></button></li>
+      
+    </ul>
+    <!-- CONTACT ICONS -->
+    
+      <div class="icons navbar-nav">
+        <a href="https://www.facebook.com/" title="facebook"><i class="fab fa-facebook-square fa-2x" id="fb"></i></a>
+        <a href="https://www.instagram.com/" title="instagram"><i class="fab fa-instagram fa-2x" id="insta"></i></a>
+        <a href="https://www.snapchat.com/l/en-gb/" title="snapchat"><i class="fab fa-snapchat-square fa-2x" id="snap"></i></a>
+        <a href="https://twitter.com/" title="twitter"><i class="fab fa-twitter-square fa-2x" id="twitter"></i></a>
+      </div>
+    </div>
+     <!-- CONTACT ICONS -->
+
+  </nav> <!-- NAVIGATION BAR -->
+
+  <div class="row">
+
+    <!-- Empty block to take up the space of the sidenav due to it being fixed -->
+    <div class="col-2"></div>
+
+    <!-- LEFT SIDE CONTENT -->
+    <div class="col-2 pr-0 pl-0 sidenav">
+      <!-- THE WEB -->
+      <div class="contentblock">
+        <h5>The Web</h5>
+        <!-- TOPICS -->
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#whatistheweb">What is the Web?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatishypertext">What is Hypertext / Hyperlink ?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatiswebclient">What is a Web Client?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatiswebserver">What is a Web Server?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatisintranet">What is Intranet?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatistunneling">What is Tunneling / Port forwarding?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatisnetworknode">What is a Network Node?</a>
+          </li>
+
+
+        </ul> <!-- TOPICS -->
+      </div> <!-- THE WEB -->
+
+      <!-- THE INTERNET  -->
+      <div class="contentblock">
+        <h5>The Internet</h5>
+        <!-- TOPICS -->
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#whatistheinternet">What is the Internet?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatisaprotocol">What is a Network Protocol?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#commonprotocols">Common Internet Protocols</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatistcp">What is TCP/IP?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatisapacket">What is a Packet?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#domainnames">What is a Domain Name?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatisadns">What is a DNS?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whenisdnsused">When is a DNS server used?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whenisdnsused">How is the DNS server set up?</a>
+          </li>
+        </ul> <!-- TOPICS -->
+      </div> <!-- THE INTERNET  -->
+
+      <!-- HTML/CSS -->
+      <div class="contentblock">
+        <h5>HTML / CSS</h5>
+        <!-- TOPICS -->
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#html4andhtml5">HTML5 / HTML4.01 / XHTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatisxhtml">What is XHTML?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whyxhtml">Why XHTML?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#html4andhtml5">HTML4.01 and HTML5 </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatiscss">What is CSS? </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#howdoescsswork">How does CSS work? </a>
+          </li>
+
+        </ul> <!-- TOPICS -->
+      </div> <!-- HTML/CSS -->
+    </div> <!-- LEFT SIDE CONTENT -->
+
+    <!-- CENTER CONTENT -->
+    <div class="col-10 p-0">
+
+      <!-- CENTER JUMBOTRON -->
+      <div class="jumbotron jumbotron-fluid centerJumbotron">
+        <div class="container">
+          <h1>Inter.net Classes</h1>
+          <h3>Learn everything you need to know about the Internet</h3>
+        </div>
+      </div> <!-- CENTER JUMBOTRON -->
+
+      <!-- CONTAINER -->
+      <div class="container centercontent">
+        <div class="block" id="whatistheweb">
+          <h2>What is the Web?</h2>
+          <img src="images/theweb.jpg" alt="the web" title="the web" class="img-thumbnail smallimg float-right">
+          <p>The Web is an abstract (imaginary) space of information. It is a subset
+            of the Internet (i.e. it runs over the Internet). It is a system of interlinked
+            <a href="#whatishypertext" title="Go to the hypertext section" class="reference">hypertext</a> documents accessed via <a
+              href="#whatistheinternet" title="Go to the Internet section" class="reference">the Internet</a> ,
+            <a href="#whatiswebclient" title="Go to the Web browser section" class="reference">Web Browsers</a> , <a href="#whatishypertext"
+              title="Go to the hyperlink section" class="reference">hyperlinks</a>.
+          </p>
+          <hr>
+        </div>
+
+        <div class="block" id="whatishypertext">
+          <h3>What is Hypertext / Hyperlink?</h3>
+          <img src="images/hypertext.jpg" alt="hypertext image" title="hypertext" class="img-thumbnail smallimg float-left">
+          <p>
+            Hypertext is any text displayed on a computer display or other electronic
+            devices with references (hyperlinks) to other text that the reader can immediately
+            access.
+            Hyperlink, or simply a link, is a reference to data that the reader can directly
+            follow either by clicking or tapping. A hyperlink points to a whole document or
+            a specific element within a document.
+          </p>
+        </div>
+
+        <div class="block" id="threeconcerns">
+          <hr>
+          <h3>The three concerns of a web document</h3>
+          <ul>
+            <li> <strong>Content </strong> - the information covneyed by a page
+              <ul>
+                <li>Meaningful structure (section headings, paragraphs, emphasis etc.) and subject
+                  matter.</li>
+              </ul>
+            </li>
+            <li> <strong>Presentation</strong> - the appearance of a page
+              <ul>
+                <li>Typefaces.</li>
+                <li>Layout.</li>
+                <li>Colour schemes & graphics.</li>
+                <li>Eye-candy.</li>
+              </ul>
+            <li>
+              <strong>Behaviour</strong> - interactive or responsive functionality
+              <ul>
+                <li>Respond to user input.</li>
+                <li>Manage external data manipulation.</li>
+                <li>Handling browser inconsistencies / requirements.</li>
+                <li>More eye-candy.</li>
+              </ul>
+            </li>
+            
+          </ul>
+
+          <hr>
+        </div>
+
+        <div class="block" id="whatiswebclient">
+          <h3>What is a Web Client?</h3>
+          <p>The client, or user, side of <a href="#whatistheweb" title="Go to the Web section" class="reference">the Web</a> . It typically refers to
+            Web browsers
+            in the user's machine which is software that creates and sends <a href="#commonprotocols"
+            title="Go to the common protocol section "  class="reference">HTTP</a> requests
+            and handles the responses.</p>
+          <img src="images/webbrowsers.png" alt="web browers" title="web browsers" class="img-thumbnail">
+          <hr>
+        </div>
+
+        <div class="block" id="whatiswebserver">
+          <h3>What is a Web Server?</h3>
+          <p>A Web server is a software that uses the <a href="#commonprotocols" title="Go to the common protocol section"
+             class="reference">HTTP</a> protocol to
+            deliver the files
+            that form Web pages to Web browsers, in response to the user's requests. Dedicated
+            computers may be referred to as Web servers, but they can run multiple servers. If
+            the Web Server is used internally and is not exposed to the public, it is an " <a href="#whatisintranet"
+             title="Go to the intranet section" class="reference">Intranet</a>
+            server".</p>
+
+          <img src="images/webserver.png" alt="web server" title="web server" class="img-thumbnail">
+
+          <hr>
+        </div>
+
+        <div class="block" id="whatisintranet">
+          <h3>What is Intranet?</h3>
+          <img src="images/intranet.png" alt="intranet" title="intranet" class="img-thumbnail smallimg float-right">
+          <p>An inhouse website / private network accessible only to an organization's staff.
+            An Intranet also uses <a href="#whatistcp" title="Go to the TCP/IP section" class="reference">TCP/IP</a> , <a href="#commonprotocols"
+            title="Go to the HTTP secion"  class="reference">HTTP</a> , and other Internet protocols and in general looks
+            like a private version of the Internet. With <a href="#whatistunneling" title="Go to the tunneling section" class="reference">tunneling</a> ,
+            companies can send private
+            messages through the public network, using special encryption/decryption and other
+            security safeguards. Typically, larger enterprises allow users within their Intranet
+            to access the public Internet through firewall servers that have the ability to screen
+            messages in both directions so that company security is maintained.</p>
+
+
+
+        </div>
+        <hr>
+        <div class="block" id="whatistunneling">
+          <h3>What is Tunneling or Port forwarding?</h3>
+          <p>Tunneling, also known as "port forwarding", is the transmission of data intended
+            for use only within a private, usually corporate network through a public network in
+            such a way that the routing <a href="#whatisnetworknode" title="Go to the network node section" class="reference">nodes</a> in the public network
+            are unaware that the transmission
+            is part of a private network.</p>
+          <img src="images/portforwarding.jpeg" alt="port forwarding" title="port forwarding" class="img-thumbnail smallimg">
+      <hr>
+     </div>
+      <div class=" block" id="whatisnetworknode">
+          <h3>What is a Network Node?</h3>
+          <p>In a communications network, a network node is a connection point that can receive,
+            create, store or send data along network routes. Each network node - whether it's an end
+            point for data transmissions or a redistribution point - has a capability to recognize,
+            process and forward transmissions to other nodes. </p>
+          <img src="images/networknodes.jpeg" alt="network nodes" title="network nodes" class="img-thumbnail">
+          <hr>
+        </div>
+
+
+        <div class="block float-left" id="whatistheinternet">
+          <h3>What is the Internet?</h3>
+          <img src="images/theinternet.jpg" alt="the internet" title="the internet" class="img-thumbnail smallimg float-right">
+          <p>The Internet is a networking infrastructure that allows computers from
+            around the world to connect to each other via routers and servers. When two
+            computers are connected over the Internet, they can send and receive information.
+            The Internet is based on common standards - notably the <a href="#whatistcp" title="Go to the TCP/IP section" class="reference">TCP/IP</a>
+            protocol.</p>
+        </div>
+        <hr>
+
+        <div class="block" id="whatisaprotocol">
+          <h3>What is a Network Protocol?</h3>
+          <img src="images/networkprotocol.jpg" alt="network protocol" title="network protocol" class="img-thumbnail smallimg float-left">
+          <p>A Network Protocol is a set of established rules that dictates how to format,
+            transmit and receive data. Modern protocols for computer networking all generally
+            use packet switching techniques to send and receive messages in the form of <a href="#whatisapacket"
+            title="Go to the packets section"  class="reference">packets</a> -
+            messages subdivided into pieces that are collected and reassembled at their destination.</p>
+
+          <hr>
+        </div>
+
+        <div class="block" id="commonprotocols">
+          <h3>Common Internet Protocols</h3>
+          <table class="table" id="protocoltable">
+            <tr>
+              <th><strong>Protocol</strong></th>
+              <th>Abbreviation</th>
+              <th>Use</th>
+            </tr>
+            <tr>
+              <td><strong>HTTP</strong></td>
+              <td>HyperText Transfer Protocol</td>
+              <td>Core protocol for Web transactions</td>
+            </tr>
+            <tr>
+              <td><strong>SSL</strong></td>
+              <td>Secure Socket Layer</td>
+              <td>Data encryption</td>
+            </tr>
+            <tr>
+              <td><strong>HTTPS</strong></td>
+              <td>Secure HTTP</td>
+              <td>Combination of HTTP and SSL</td>
+            </tr>
+            <tr>
+              <td><strong>SMTP</strong> <br> <strong>POP</strong> <br><strong>IMAP</strong> </td>
+              <td>Simple Mail Transfer Protocol
+                <br> Post Office Protocol <br> Onternet Message Access Protocol
+              </td>
+              <td>Used in combination to provide most
+                email services
+              </td>
+            </tr>
+            <tr>
+              <td><strong>FTP</strong></td>
+              <td>File Transfer Protocol</td>
+              <td>Used to exchange files between computers</td>
+            </tr>
+            <tr>
+              <td><strong>SSH</strong> and <strong>SFTP</strong></td>
+              <td>Secure SHell and Secure(SSH FTP)</td>
+              <td>Encreypted access to remote
+                computers plus extension for encrypted file transfer
+              </td>
+            </tr>
+            <tr>
+              <td><strong>BitTorrent</strong></td>
+              <td>BitTorrent</td>
+              <td>Protocol for peer-to-peer data access and exchange</td>
+            </tr>
+          </table>
+
+          <hr>
+        </div>
+
+        <div class="block" id="whatistcp">
+          <h3>TCP/IP (Transmission Control Protocol)</h3>
+          <iframe id="tcpvideo" class="img-thumbnail float-right" src="https://www.youtube.com/embed/PpsEaqJV_A0">
+          </iframe>
+          <p>Transmission Control Protocol (TCP) and Internet Protocol (IP) are two distinct computer network protocols.
+            TCP and IP are
+            so commonly used together, however, that TCP/IP has become standard terminology for referring to this suite
+            of protocols.
+            <a href="https://www.lifewire.com/transmission-control-protocol-and-internet-protocol-816255"
+            title="Go to the source"  class="reference">(Source)</a>
+            <br>They handle the delivery of <a href="#whatisapacket" title="Go to the packets section" class="reference">packets</a> to/from any device
+            with an IP address - a unique numeric
+            identified for a device on the internet e.g. 128.249.233.249
+          </p>
+
+
+          <hr>
+        </div>
+
+        <div class="block" id="whatisapacket">
+          <h3>What is a Packet?</h3>
+          <p>A packet is the unit of data that is routed between a sender and a receiver on the
+            internet via any other packet-switched network. When any file is sent from one place
+            to another on the internet, the TCP layer of <a href="#whatistcp" title="Go to the TCP/IP section" class="reference">TCP/IP</a> divides the
+            file into "chunks" of
+            an efficient size for routing. Each of these packets is separately numbered and includes
+            the Internet address (IP) of the destination. The individual packets for a given file may
+            travel different routes through the Internet. When they have all arrived, they are reassembled
+            into the original file by the TCP layer at the receiving end.</p>
+          <p>Packets have two parts:
+            <ul>
+              <li>The Header (addressing / sequencing information and metadata).</li>
+              <li>The Body (actual data payload).</li>
+            </ul>
+          
+
+          <hr>
+        </div>
+
+        <div class="block" id="routingpackets">
+          <h3>IP: Routing Packets</h3>
+          <p>IP routes packets using address info in the header to direct them to their destination.
+            IP routing is connectionless.</p>
+          <ul>
+            <li>Does not require a fixed connection between endpoints.</li>
+            <li>Enables data to travel via multiple routes to reach the endpoint.</li>
+            <li>Packets can be re-routed around points of failure.</li>
+          </ul>
+
+          <hr>
+        </div>
+
+        <div class="block" id="commonanalogy">
+          <h3>A very common analogy</h3>
+          <img src="images/letter.png" alt="letter" title="letter" class="verysmallimg float-right">
+          <p>Imagine a written message sent as a series of separate, sequenced postcards.</p>
+         
+          <ul>
+            <li>Sequence is set by the sender, each card is addressed to the same recipient
+              and posted.</li>
+            <li>Cards take their own slighltly different route through the postal system and are
+              delivered to the recipient.
+            </li>
+           
+            <li>The recipient assembles cards and acts accordingly.
+                
+              <ul>
+                <li>Put in order and read message?</li>
+                <li>Contact sender and ask for missing cards?</li>
+                <li>Stop waiting and ignore future deliveries?</li>
+                <li>Ask sender to stop sending cards?</li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr>
+        </div>
+
+        <div class="block" id="domainnames">
+          <h3>Domain Names</h3>
+          <p>Domain names make the Internet easier (for humans) to use by mapping numeric IP
+            addresses to text-based names e.g. 128.240.233.249 &lt; = &gt; <a
+                href="https://www.jisc.ac.uk/">www.netskills.ac.uk</a></p>
+
+          <p>When a device makes a request using a domain name it is resolved back into a numeric IP address by a <a
+              href="#whatisadns" class="reference">DNS</a> server.
+            <ul>
+              <li>There are thousands of <a href="#whatisadns" title="Go to the DNS section" class="reference">DNS</a> servers across the Internet.
+              </li>
+              <li>Your device/ISP will primarily point to one.</li>
+            </ul>
+          
+
+          <hr>
+        </div>
+
+        <div class="block" id="whatisadns">
+          <h3>What is a DNS?</h3>
+          <p>A DNS server is a crucial part of the DNS (domain name system) infrastructure. It stores IP addresses and
+            their hostnames.</p>
+          <img src="images/DNS.png" alt="dns" title="DNS" class="smallimg img-thumbnail">
+        </div>
+
+        <div class="block" id="whenisdnsused">
+          <h4>When is a DNS server used?</h4>
+          <p>When a user types in a host address or URL in a browser, the DNS resolver will contact a DNS server to find
+            the IP address
+            connected to the hostname and take this back to the user, so they can look at the website or device they
+            want access. If a DNS
+            resolver can't find the information they need it will then move along to the next DNS server hierachy until
+            it finds the data
+            needed to resolve an address.</p>
+
+          <h4>How is the DNS server set up?</h4>
+          <p>An ISP would normally set up their own DNS server. As well as that, the router used in the home or office
+            will also be used
+            by computers attatched to them as a DNS server for URL queries. Routers act as gatekeepers, forwarding on
+            requests to an ISP's
+            DNS servers.</p>
+
+          <hr>
+        </div>
+        <div class="block" id="html5html4xhtml">
+          <h3>HTML5 / HTML4.01 / XHTML</h3>
+          <img src="images/html.jpg" alt="html" title="html" class="smallimg img-thumbnail float-right">
+          <p>HTML stands for Hypertext Markup Language. It allows the user to create and structure sections, paragraphs,
+            headings, links,
+            and blockquotes for web pages and applications.</p>
+          <p>HTML is not a programming Language, meaning it doesn’t have the ability to create dynamic functionality.
+            Instead, it makes it possible
+            to organize and format documents, similarly to Microsoft Word.</p>
+
+          <hr>
+        </div>
+
+        <div class="block" id="whatisxhtml">
+          <h3>What is XHTML?</h3>
+          <p>XHTML stands for Extensible HyperText Markup Language
+            <ul>
+              <li id="xhtmlimg"><img src="images/xhtml.png" alt="xhtml" title="xhtml" class="verysmallimg img-thumbnail float-right"></li>
+
+              <li>XHTML is almost identical to <a href="#html4andhtml5" title="Go to the HTML4 and HTML5 section" class="reference">HTML</a> .</li>
+              <li>XHTML is stricter than <a href="#html4andhtml5" title="Go to the HTML4 and HTML5 section" class="reference">HTML</a>.</li>
+              <li>XHTML is <a href="#html4andhtml5" title="Go to the HTML4 and HTML5 section" class="reference">HTML</a> defined as an XML application. </li>
+              <li>XHTML is supported by all major browsers.</li>
+            </ul>
+          <hr>
+        </div>
+
+        <div class="block" id="whyxhtml">
+          <h3>Why XHTML?</h3>
+          <p>Many pages on the internet contain "bad" <a href="#html4andhtml5" title="Go to the HTML4 and HTML5 section" class="reference">HTML</a> that does not
+            follow
+            the <a href="#html4andhtml5" title="Go to the HTML4 and HTML5 section" class="reference">HTML</a> rules.</p>
+          <p>XML is a markup language where documents must be marked up correctly (be "well-formed").</p>
+
+          <hr>
+        </div>
+
+        <div class="block" id="html4andhtml5">
+          <h3>HTML4.01 and HTML5</h3>
+          <img src="images/html5.png" alt="html5" title="html5" class="verysmallimg img-thumbnail float-right">
+          <p>HTML4 is the main version of HTML used up until the last decade or so, and is still widely used.</p>
+          <p>HTML5 is a newer version of HTML which added a lot of new features, most of which based around providing
+            new tags for
+            common Web things (which helps accessibility and analysis) as well as multimedia stuff (modern web video for
+            example).</p>
+          <hr>
+        </div>
+
+
+
+        <div class="block" id="whatiscss">
+          <h3>What is CSS?</h3>
+          <p>
+            <img src="images/css3.png" alt="css3" title="css3" class="verysmallimg img-thumbnail float-right">
+            CSS stands for Cascading Style Sheets with an emphasis placed on “Style.” While HTML is used to structure a
+            web document
+            (defining things like headlines and paragraphs, and allowing you to embed images, video, and other media),
+            CSS comes through
+            and specifies your document’s style—page layouts, colors, and fonts are all determined with CSS. Think of
+            HTML as the foundation
+            (every house has one), and CSS as the aesthetic choices (there’s a big difference between a Victorian
+            mansion and a mid-century modern home).
+            <a href="https://skillcrush.com/2012/04/03/css/" class="reference">(Source)</a></p>
+        </div>
+
+
+        <div class="block" id="howdoescsswork">
+          <h3>How does CSS work?</h3>
+          <p>A CSS rule-set consists of a selector and a declaration block:</p>
+          <img src="images/csssyntax.gif" alt="css syntax" title="css syntax">
+          <p>The selector points to the <a href="#html4andhtml5" title="Go to the HTML4 and HTML5 section" class="reference">HTML</a> element you want to style.
+          </p>
+          <p>The declaration block contains one or more declarations separated by semicolons.</p>
+          <p>Each declaration includes a <a href="#whatiscss" title="Go to the CSS section" class="reference">CSS</a> property name and a value,
+            separated by a colon.</p>
+        </div>
+      </div> <!-- CONTAINER -->
+
+      <div class="quiz float-left">
+        <!-- QUIZ -->
+        <h3>Take a simple quiz!</h3>
+
+        <form name="quiz">
+          <!-- FORM -->
+          <div class="row">
+            <!-- ROW -->
+            <div class="col-8 ">
+              <p>What does HTML stand for?</p>
+              <input type="radio" class="multiplequestion" name="question1" value="q1answer1">Hyperlinks and Text Markup
+              Language <br>
+              <input type="radio" class="multiplequestion" name="question1" value="q1answer2">Home Tool Markup Language
+              <br>
+              <input type="radio" class="multiplequestion" name="question1" value="q1answer3">Hyper Text Markup Language
+              <br>
+
+              <p>What does CSS stand for?</p>
+              <input type="radio" class="multiplequestion" name="question2" value="q2answer1">Computer Style Sheets <br>
+              <input type="radio" class="multiplequestion" name="question2" value="q2answer2">Colorful Style Sheets <br>
+              <input type="radio" class="multiplequestion" name="question2" value="q2answer3">Creative Style Sheets <br>
+              <input type="radio" class="multiplequestion" name="question2" value="q2answer4">Cascading Style Sheets <br>
+            </div>
+            <div class="col-4">
+              <p>What is the HTTP protocol used for?</p>
+              <input type="radio" class="multiplequestion" name="question3" value="q3answer1">It's the core protocol for
+              Web transaction<br>
+              <input type="radio" class="multiplequestion" name="question3" value="q3answer2">Data encryption <br>
+              <input type="radio" class="multiplequestion" name="question3" value="q3answer3">Used to exchange files
+              between computers <br>
+
+
+
+              <p>What is 2+2*2?</p>
+              <input type="radio" class="multiplequestion" name="question4" value="q4answer1">8<br>
+              <input type="radio" class="multiplequestion" name="question4" value="q4answer2">4<br>
+              <input type="radio" class="multiplequestion" name="question4" value="q4answer3">6<br>
+            </div>
+          </div> <!-- ROW -->
+          <input type="button" id="submit" class="btn btn-light" value="Submit!" onclick="check()">
+        </form> <!-- FORM -->
+
+        <div id="after_submit">
+          <!-- AFTER SUBMIT -->
+          <p id="number_correct"></p>
+        </div> <!-- AFTER SUBMIT -->
+
+      </div> <!-- QUIZ -->
+
+
+      <div class="footer">
+        <footer class="foot">
+          <div class="row">
+            <div class="col">
+              <p>
+                <a href="https://policies.google.com/terms?hl=en-US">Terms of Use</a>
+                <a href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a>
+              </p>
+            </div>
+            <div class="col">
+              <p class="float-right">
+                © 2018-2019 Inter.net, Inc.
+              </p>
+
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+    </div> <!-- CENTER CONTENT -->
+  </div>
+
+
+
+
+
+
+    <!-- My JS -->
+    <script src="main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

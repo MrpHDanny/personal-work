@@ -1,0 +1,80 @@
+/* BODY */
+body{
+	background: url(images/frontpage2.png);
+	background-size: cover;
+	background-position: center;	
+		
+}
+
+/* HTML */
+html {
+	height: 100%;
+}
+ 
+/* NAVBAR*/
+.navbar-dark{
+	box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.16), 2px 2px 10px 5px rgba(0,0,0,0.12);
+}
+
+/* Main content */
+#content {
+	font-family: 'Lato', sans-serif;
+	color: white;
+	padding-top: 20%;
+	text-align: center;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+/* The main header */
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+/* Decorative hr */
+hr{
+	width: 90%;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	
+}
+
+/* Navbar icons */
+.icons a{
+	margin: 5px;
+	color: rgb(218, 200, 200)
+}
+/* Mouse over link for the navbar icons */
+.icons a:hover{
+	color: white;
+}
+
+/* Footer */
+.foot{
+	color:rgb(218, 200, 200);
+	background-color: #212529;
+	height: 100%;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* Footer paragraphs */
+.foot p{
+
+	margin-bottom: 0px;
+	margin-right: 20px;
+}
+/* Footer links */
+.foot a{
+	color:rgb(218, 200, 200);
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+  /* Mouse over link for the footer */
+.foot a:hover {
+	color: white;
+  }

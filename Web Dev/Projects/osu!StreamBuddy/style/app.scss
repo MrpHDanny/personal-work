@@ -1,0 +1,476 @@
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $secondaryFontColor;
+  cursor: default;
+
+  h2 {
+    font-size: 1.8em;
+    cursor: default;
+  }
+}
+
+body {
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: $background;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#setupScreenWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#title {
+  width: 100vw;
+  text-align: center;
+  color: $titleFontColor;
+
+  h1 {
+    color: $titleFontColor;
+    font-size: 2.2em;
+  }
+  hr {
+    margin: auto;
+    width: 350px;
+  }
+  p {
+    font-size: 1.5em;
+    color: $titleFontColor;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #title {
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+#keysRow {
+  margin-top: 10px;
+  .keyInput {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    height: 80px;
+    width: 80px;
+    outline: none;
+    border-radius: 20px;
+    border: 0;
+    background: linear-gradient($buttonGradient1, $buttonGradient2);
+    color: white;
+    box-shadow: 0px 4px 2px 0px $buttonShadow;
+    margin: 0px 30px;
+  }
+}
+
+#mouseRow {
+  margin-top: 20px;
+  display: flex;
+
+  $input-bg-pseudo-active: #210034;
+  $input-bg-pseudo-static: #210034;
+  $input-width: 3.5rem; // adjust only this number for dimensions
+  $input-radius: calc(#{$input-width} / 2);
+  $input-height: calc(#{$input-width} / 2);
+
+  input[type="checkbox"]#mouseToggle {
+    cursor: pointer;
+    // border: 1px solid $borderColor
+    appearance: none;
+    width: $input-width;
+    height: $input-height;
+    background-color: none;
+    border-radius: $input-radius;
+    outline: none; // bad accessibility
+    transition: background 450ms ease;
+    box-shadow: 0px 4px 2px 0px $buttonShadow;
+
+    &:before,
+    &:after {
+      display: block;
+      content: "";
+      margin-top: 1px;
+      margin-left: 2px;
+      border-radius: 100%;
+      transition: background 450ms ease, transform 450ms ease;
+    }
+
+    &:before {
+      height: 25px;
+      width: 25px;
+      background-color: lighten($color: $input-bg-pseudo-static, $amount: 10%);
+    }
+
+    // active state
+    &:checked {
+      background-color: $buttonGradient1;
+
+      &:before {
+        background-color: $input-bg-pseudo-active;
+        transform: translateX(105%);
+      }
+    }
+  }
+  p {
+    padding-top: 2px;
+    margin-left: 20px;
+    color: $secondaryFontColor;
+    width: 180px;
+  }
+}
+
+#modeRow {
+  margin-top: 10px;
+
+  #songSelect {
+    display: none;
+    #selectedSong {
+      display: block;
+      margin: auto;
+      width: 250px;
+      cursor: pointer;
+      padding: 5px 10px;
+      border: 1px solid $borderColor;
+      border-radius: 20px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+    }
+    .toggle {
+      border-bottom-left-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+      border-bottom: 1px solid black !important;
+    }
+
+    #songMenu {
+      height: 0px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+
+      .song {
+        padding-left: 10px;
+        user-select: none;
+        position: relative;
+        display: block;
+        margin: auto;
+        appearance: none;
+        width: 250px;
+        height: 30px;
+        border: 1px solid $borderColor;
+        border-top: none;
+        border-bottom: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+          background: #210034;
+        }
+      }
+
+      #song4 {
+        border-bottom: 1px solid $borderColor;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+    #songMenu.toggle {
+      height: 125px !important;
+    }
+  }
+  #songSelect.toggle {
+    display: block;
+  }
+
+  #songArrow {
+    cursor: pointer;
+    font-size: 120%;
+    position: relative;
+    left: 250px;
+    top: 25px;
+    transition: top 0.3s ease-in-out;
+  }
+  #songArrow.active {
+    top: 28px !important;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  #modes {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+  }
+  .mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+    input {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      appearance: none;
+      border: 1px solid $borderColor;
+      border-radius: 50%;
+      outline: none;
+      &:before {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        display: block;
+        content: "";
+        margin-top: 4px;
+        margin-left: 4px;
+        border-radius: 100%;
+        transition: background 0.3s ease-in-out;
+      }
+
+      &:checked {
+        &:before {
+          background: $secondaryFontColor;
+        }
+      }
+    }
+  }
+  // Remove input arrows
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  #modeInput {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    height: 35px;
+    width: 150px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    background: none;
+    outline: none;
+    color: $secondaryFontColor;
+    border: 1px solid $borderColor;
+  }
+}
+
+#bpmRow {
+  h2 {
+    z-index: 10;
+  }
+
+  margin-top: 10px;
+  #bpmInput {
+    z-index: 10;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    height: 35px;
+    width: 150px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    background: none;
+    outline: none;
+    color: $secondaryFontColor;
+    border: 1px solid $borderColor;
+  }
+
+  #bpmInfo {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      appearance: none;
+      border: 1px solid $borderColor;
+      border-radius: 50%;
+      outline: none;
+      &:before {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        display: block;
+        content: "";
+        margin-top: 4px;
+        margin-left: 4px;
+        border-radius: 100%;
+        transition: background 0.3s ease-in-out;
+      }
+      &:checked {
+        &:before {
+          background: $secondaryFontColor;
+        }
+      }
+    }
+
+    #bpmMeasures {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .beatPerMeasure {
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+  margin-top: 20px;
+  background: none;
+  outline: none;
+  font-size: 2em;
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 200px;
+  color: #fefeff;
+  background: linear-gradient($buttonGradient1, $buttonGradient2);
+  // box-shadow: 0px 4px 2px 0px $buttonShadow;
+}
+
+#odRow {
+  position: relative;
+  margin-top: 10px;
+  #odInput {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    height: 35px;
+    width: 150px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    background: none;
+    outline: none;
+    color: $secondaryFontColor;
+    border: 1px solid $borderColor;
+  }
+
+  // h2:after {
+  //   position: absolute;
+  //   content: "aasdsasadsa";
+  //   border: 1px solid white;
+  //   width: 100px;
+  //   height: 100px;
+  // }
+
+  h2 {
+    position: relative; /*this is the key*/
+    i {
+      cursor: pointer;
+      position: relative;
+      top: -8px;
+      font-size: 90%;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: lighten($color: #da9aff, $amount: 10%);
+      }
+    }
+    .toggle {
+      transform: translate(0px, 5px);
+      color: darken($color: #da9aff, $amount: 10%);
+    }
+  }
+}
+#keys {
+  position: absolute;
+  right: 15px;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+
+  #LMB,
+  #RMB {
+    opacity: 0;
+    transform: translateX(150%);
+    transition: all 0.3s ease-in-out;
+  }
+  .toggleMouseKeys {
+    opacity: 1 !important;
+    transform: translate(0%) !important;
+  }
+}
+
+#keys div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  border-left: 2px solid $keyBorderColor;
+  background: linear-gradient(90deg, $buttonGradient1, $buttonGradient2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  span {
+    color: #fefeff;
+  }
+}
+
+#odInfo {
+  position: absolute;
+  top: 35px !important;
+  left: -75px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  table {
+    background-color: #000000;
+
+    text-align: center;
+    border-collapse: collapse;
+    tr {
+      height: 2px;
+    }
+    td {
+      padding: 6px 2px;
+      letter-spacing: 1px;
+      font-size: 12px;
+      color: #ffeeff;
+    }
+  }
+
+  .special {
+    color: $secondaryFontColor;
+  }
+  .bl {
+    border-left: 1px solid #fefeff;
+    border-left: 1px solid $secondaryFontColor;
+  }
+  .bt {
+    border-top: 1px solid #fefeff;
+    border-top: 1px solid $secondaryFontColor;
+  }
+}
+
+#odInfo.active {
+  height: 180px;
+}

@@ -1,0 +1,238 @@
+/* The body */
+body{
+    font-family: 'Roboto Slab', serif;
+
+    background-color: #d7d8de;
+}
+
+/* NAVBAR STUFF */
+.navbar{
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+   
+}
+/* navbar a colors */
+.navbar a{
+    color:black;
+}
+
+/* navbar a on hover */
+.navbar a:hover{
+    background-color: rgba(240,240,240,0.8);
+}
+/* HEADER STUFF  */
+
+/* Title */
+.title{
+    text-align: center;
+    margin-bottom: 200px;
+
+}
+
+/* About content block */
+.intro{
+    background-color: #d7d8de;
+    margin-bottom: 200px;
+}
+
+/* Header with avatar and info */
+.header{
+    margin-bottom: 200px;
+}
+
+/* Contact text */
+.contact-text p{
+    font-size: 1.2em;
+}
+
+/* Avatar and University logo */
+#nulogo{
+    width: 50%;
+}
+#avatar{
+    width: 100%;
+}
+
+/* Span style */
+#largetxt{
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Contact icons */
+.contacticons a{
+    padding: 0;
+	margin: 5px;
+    color: black;
+    font-size: 2em;
+}
+/* Contact icons on hover */
+.contacticons a:hover{
+	color: white;
+}
+
+/* ABOUT ME STUFF */
+/* About me block */
+.aboutme{
+    font-size: 1.2em;
+    margin-bottom: 200px;
+}
+
+/* WORK EXPERIENCE STUFF */
+/* Years */
+.years{
+    text-align: center;
+    margin: 50px 0px;
+}
+/* Headers */
+.workexperience h4{
+    margin: 40px 0px;
+}
+
+
+/* SKILLS CONTENT STUFF */
+
+/* Skills content block */
+.skills{
+    padding:  50px;
+    background: #464648;
+    color:white;
+}
+
+/* Title */
+#skillstitle{
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+
+/* Skills row */
+.skill-row{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+}
+/* Skill icons on hover */
+.skill-row button img:hover{
+    background: rgb(100, 100, 100);
+    
+}
+/* Skill row headers */
+.skill-row h3{
+    margin-bottom: 40px;
+}
+/* Skills icons */
+.skillsicon{
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(60,60,60);
+}
+/* Skill button styles */
+.skill-button{
+    border: none;
+    background: none;
+}
+/* Adding margin to popup paragraphs */
+#programmingpopup{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#webdevpopup{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#languagespopup{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#otherpopup{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+
+/* MY PROJECTS STUFF */
+
+/* Projects block */
+.projects{
+    padding-top: 100px;
+    background: #464648;
+    color: white;
+}
+/* Card */
+.card{
+    box-shadow: 5px 5px 15px 10px rgba(0,0,0,0.16), 2px 2px 10px 5px rgba(0,0,0,0.12);
+    background-color:#d7d8de;
+    border: 1px solid #d7d8de;
+    padding: 10px;
+    
+}
+/* Card body */
+.card-body{
+    color:black;
+    text-align: center;
+}
+/* Github icons */
+.githubicon{
+    color: #464648;
+}
+/* Gitgub icons on hover */
+.githubicon:hover{
+    color: #808080;
+}
+/* Strings */
+.string{
+    text-align: center;
+    border: 2px solid #808080;
+    border-top: none;
+    border-bottom: none;
+    width: 50%;
+    margin:auto;
+    padding: 50px;
+}
+
+
+
+
+/*  OTHER  */
+/* hr style */
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* Center align text */
+.center-align{
+    text-align: center;
+}
+/* main title */
+#maintitle{
+    margin-top: 50px;
+}
+/* Title shadows */
+.title-shadow{
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+/* Box shadow */
+.text-shadow{
+    text-shadow:
+    10px 10px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+
