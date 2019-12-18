@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fetch JSON from API and map lat lon</title>
+  </head>
+
+  <body>
+    <h1>Where is the ISS?</h1>
+
+    <p>latitude: <span id="lat"></span> <br /></p>
+    <p>longitude: <span id="long"></span> <br /></p>
+    <p>velocity: <span id="vel"></span> km/h<br /></p>
+
+    <script>
+      const api_url = "https://api.wheretheiss.at/v1/satellites/25544";
+      async function getISS() {
+        // response
+        const response = await fetch(api_url);
+        // parse data into a json
+        data = await response.json();
+        // console.log(data);
+        // javascript destructuring
+        // Extracts variables from an object[]
+        const { latitude, longitude, velocity } = data;
+        document.getElementById("lat").textContent = latitude;
+        document.getElementById("long").textContent = longitude;
+        document.getElementById("vel").textContent = velocity;
+        console.log(latitude);
+        console.log(longitude);
+        console.log(velocity);
+      }
+
+      setInterval(getISS, 1000);
+    </script>
+  </body>
+</html>

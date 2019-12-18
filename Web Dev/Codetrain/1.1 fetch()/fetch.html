@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Train: DATA/APIs 1</title>
+</head>
+
+<body>
+
+
+    <!-- image element -->
+    <img src="" alt="" id="rainbow" height="600px" width="480px" />
+
+    <script>
+        console.log("about to catch a rainbow");
+
+        catchRainbow()
+        .then(response => {
+            console.log("done!");
+        })
+        .catch(error =>{
+            console.log('error');
+            console.error(error);
+        });
+
+        async function catchRainbow() {
+            const response = await
+            fetch("https://images.unsplash.com/photo-1529912626516-e58b23f44f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+            const blob = await response.blob();
+            document.getElementById("rainbow").src = URL.createObjectURL(blob);            
+        }
+    </script>
+
+
+</body>
+
+</html>
