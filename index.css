@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Righteous", cursive;
+    font-size: 1.1rem;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("background.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Remove scrollbars */
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+div#content {
+    position: absolute;
+    border-radius: 20px;
+    padding: 50px 100px;
+    width: 60vw;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+div#content * {
+    color: #20add4;
+    text-shadow: 0 0 10px #20add4;
+}
+
+div#content p {
+    font-size: 1rem;
+    padding: 2px 0px;
+    text-indent: 20px;
+}
+
+div#content h1, h2, h3, h4, h5 {
+    padding: 10px 0px;
+}
+
+div#content h1 {
+    font-size: 2rem;
+}
+
+div#border {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 3px solid #20add4;
+    box-shadow: 0 0 50px #20add4, inset 0 0 50px #20add4;
+    animation: flicker-4 4s linear infinite both;
+}
+
+div#flicker {
+    width: 60vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 980px) {
+    div#content {
+        padding: 20px 50px;
+        width: 80vw;
+        height: 90vh;
+    }
+    div#flicker {
+        width: 80vw;
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    div#content {
+        padding: 20px;
+    }
+}
+
+@keyframes flicker-4 {
+    0%, 100% {
+        opacity: 1;
+    }
+    31.98% {
+        opacity: 1;
+    }
+    32% {
+        opacity: 0;
+    }
+    32.8% {
+        opacity: 0;
+    }
+    32.82% {
+        opacity: 1;
+    }
+    34.98% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    35.7% {
+        opacity: 0;
+    }
+    35.72% {
+        opacity: 1;
+    }
+    36.98% {
+        opacity: 1;
+    }
+    37% {
+        opacity: 0;
+    }
+    37.6% {
+        opacity: 0;
+    }
+    37.62% {
+        opacity: 1;
+    }
+    67.98% {
+        opacity: 1;
+    }
+    68% {
+        opacity: 0;
+    }
+    68.4% {
+        opacity: 0;
+    }
+    68.42% {
+        opacity: 1;
+    }
+    95.98% {
+        opacity: 1;
+    }
+    96% {
+        opacity: 0;
+    }
+    96.7% {
+        opacity: 0;
+    }
+    96.72% {
+        opacity: 1;
+    }
+    98.98% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    99.6% {
+        opacity: 0;
+    }
+    99.62% {
+        opacity: 1;
+    }
+}
