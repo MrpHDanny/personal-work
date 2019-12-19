@@ -5,131 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:200&display=swap"
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.2rem;
-      }
-
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-      }
-
-      h3 {
-        margin: 10px 0px;
-      }
-
-      a {
-        color: black;
-        display: inline-block;
-        overflow: hidden;
-        position: relative;
-        text-decoration: none;
-      }
-      a:after {
-        background: linear-gradient(
-            to bottom,
-            rgba(20, 20, 20, 0.8),
-            rgba(20, 20, 20, 0.8)
-          )
-          center 1.08em/100% 5px no-repeat;
-        content: "";
-        height: 100%;
-        left: 0;
-        top: 0;
-        position: absolute;
-        will-change: transform;
-        z-index: 0;
-        width: 400%;
-        visibility: hidden;
-      }
-      a:hover:after {
-        animation: underline-gradient 3s linear infinite;
-        animation-direction: alternate;
-        background-image: linear-gradient(
-          108deg,
-          rgba(251, 250, 45, 1) 0.5%,
-          rgba(214, 4, 4, 1) 29.8%,
-          rgba(241, 57, 221, 1) 59.9%,
-          rgba(95, 11, 228, 1) 84.2%
-        );
-        visibility: visible;
-      }
-
-      @keyframes underline-gradient {
-        0% {
-          transform: translate3d(0%, 0%, 0);
-        }
-        100% {
-          transform: translate3d(-75%, 0%, 0);
-        }
-      }
-    </style>
   </head>
   <body>
-    <h3>Notable Projects</h3>
-    <a href="Web%20Dev/Projects/osu!StreamBuddy/index.html"
-      >osu! Stream Buddy</a
-    >
-    <a href="Web%20Dev/Projects/RGB%20Guesser/rgbguesser.html"
-      >RGB color guesser game</a
-    >
-    <a href="Web%20Dev/Projects/Animated%20Sounds/circles.html"
-      >Animated sounds</a
-    >
-    <a
-      href="Web%20Dev/Codetrain/1.5%20Mapping%20Geolocation%20with%20Leaflet.js/exercise.html"
-      >Where is the ISS?</a
-    >
-    <a href="Web%20Dev/Projects/To-do%20list/index.html">To-do list</a>
-    <a href="Web%20Dev/Projects/Random%20Color%20Circles/circles.html"
-      >Random color circles</a
-    >
+    <div id="flicker">
+      <div id="border"></div>
+    </div>
 
-    <h3>Single Pages</h3>
+    <div id="content">
+      <h1>Hello!</h1>
 
-    <a href="Web%20Dev/Projects/Animated%20Landing%20Page/index.html"
-      >Animated landing page</a
-    >
-    <a href="Web%20Dev/Learning/Javascript%20Animations"
-      >Javascript animations</a
-    >
-    <a href="Web%20Dev/Projects/Inter.net%20classes/landingPage.html"
-      >Inter.net classes</a
-    >
-    <a href="Web%20Dev/Projects/Work%20portfolio/workportfolio.html"
-      >Work portfolio</a
-    >
+      <p style="text-indent: 0;">
+        I am a Stage 2 Computer Science undergraduate at Newcastle University.
+      </p>
+      <p style="text-indent: 0;">
+        I am ccurrently looking for a placement year job :)
+      </p>
 
-    <h3>Other</h3>
-    <a
-      href="Web%20Dev/Codetrain/1.3%20Graphing%20with%20Chart.js/charting_exercise.html"
-      >Charting Exercise</a
-    >
-    <a href="Web%20Dev/Learning/Clip%20Path/Clip%20path%20box/index.html"
-      >Clip path box</a
-    >
-    <a href="Web%20Dev/Learning/Clip%20Path/Clip%20path%20navbar/index.html"
-      >Clip path navbar</a
-    >
-    <a
-      href="Web%20Dev/Learning/Clip%20Path/Clip%20path%20responsive%20navbar/index.html"
-      >Clip path responsive navbar</a
-    >
+      <h2>Some of my projects</h2>
 
-    <a href="Web%20Dev/Udemy/Candy%20museum/index.html">Candy Museum</a>
+      <p>
+        >
+        <a href="Web%20Dev/Projects/osu!StreamBuddy/index.html"
+          >osu! Stream Buddy</a
+        >
+        - Single-page web application dedicated for rhythm game players to
+        measure their key tapping speed and consistency. Project details on
+        <a
+          style="font-size: 1rem;"
+          href="https://workflowy.com/s/osu-streaming-buddy/oo4en0aSUiqlsZkl"
+          >workflowy</a
+        >. (Work in progress)
+      </p>
 
-    <a href="Web%20Dev/Udemy/Purrfect%20match/project.html">Purrfect match</a>
+      <p>
+        >
+        <a href="Web%20Dev/Projects/RGB%20Guesser/rgbguesser.html"
+          >RGB color guesser game</a
+        >
+        - A color game with several difficulties, coded with JavaScript, where
+        the user guesses a color from a randomly generated RGB color code.
+      </p>
+
+      <p>
+        >
+        <a href="Web%20Dev/Projects/Animated%20Sounds/circles.html"
+          >Animated sounds</a
+        >
+        - A user-interactive web page that plays different sounds and animations
+        on keypresses. Written using JavaScript and the Paper.js library.
+      </p>
+
+      <p>
+        >
+        <a
+          href="Web%20Dev/Codetrain/1.5%20Mapping%20Geolocation%20with%20Leaflet.js/exercise.html"
+          >Where is the ISS?</a
+        >
+        - A web page that fetches and tracks the geolocation of the ISS from the
+        “Where the ISS at” REST API and maps in on the world map using the
+        Leaflet JavaScript library.
+      </p>
+
+      <p>
+        > <a href="Web%20Dev/Projects/To-do%20list/index.html">To-do list</a> -
+        A simple to-do list page.
+      </p>
+
+      <h3>Single page websites</h3>
+
+      <p>
+        >
+        <a href="Web%20Dev/Projects/Animated%20Landing%20Page/index.html"
+          >Animated landing page</a
+        >
+      </p>
+
+      <p>
+        >
+        <a href="Web%20Dev/Learning/Javascript%20Animations"
+          >Javascript animations</a
+        >
+      </p>
+
+      <p>
+        >
+        <a href="Web%20Dev/Projects/Inter.net%20classes/landingPage.html"
+          >Inter.net classes</a
+        >
+      </p>
+
+      <p>
+        >
+        <a href="Web%20Dev/Projects/Work%20portfolio/workportfolio.html"
+          >Work portfolio</a
+        >
+      </p>
+
+      <p>
+        > <a href="Web%20Dev/Udemy/Candy%20museum/index.html">Candy Museum</a>
+      </p>
+
+      <p>
+        >
+        <a href="Web%20Dev/Udemy/Purrfect%20match/project.html"
+          >Purrfect match</a
+        >
+      </p>
+
+      <h3>Other</h3>
+      <p>
+        >
+        <a
+          href="Web%20Dev/Codetrain/1.3%20Graphing%20with%20Chart.js/charting_exercise.html"
+          >Charting Exercise</a
+        >
+      </p>
+
+      <p>
+        >
+        <a href="Web%20Dev/Learning/Clip%20Path/Clip%20path%20box/index.html"
+          >Clip path box</a
+        >
+      </p>
+
+      <p>
+        >
+        <a href="Web%20Dev/Learning/Clip%20Path/Clip%20path%20navbar/index.html"
+          >Clip path navbar</a
+        >
+      </p>
+
+      <p>
+        >
+        <a
+          href="Web%20Dev/Learning/Clip%20Path/Clip%20path%20responsive%20navbar/index.html"
+          >Clip path responsive navbar</a
+        >
+      </p>
+
+      <p>
+        >
+        <a href="Web%20Dev/Projects/Random%20Color%20Circles/circles.html"
+          >Random color circles</a
+        >
+      </p>
+
+      <h3>More</h3>
+
+      <p>
+        >
+        <a href="https://www.linkedin.com/in/danielis-golubovskis-06b448169/"
+          >Linkedin</a
+        >
+      </p>
+      <p>> <a href="https://github.com/MrpHDanny">Github</a></p>
+    </div>
   </body>
 </html>
